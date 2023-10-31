@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename='killer-party'>
+    <BrowserRouter basename='KillerParty'>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="game" element={<Game />} />
