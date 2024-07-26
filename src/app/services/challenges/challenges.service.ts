@@ -10,10 +10,10 @@ export class ChallengesService {
 
   constructor() { }
 
-  getRandomChallenges(count: number = 5): Observable<ChallengeInterface[]> {
+  getRandomChallenges(count: number = 5): ChallengeInterface[] {
     const shuffled = this.shuffleChallenges(KILLER_CHALLENGES);
     const selectedChallenges = shuffled.slice(0, count);
-    return of(selectedChallenges);
+    return selectedChallenges;
   }
 
   private shuffleChallenges(challenges: ChallengeInterface[]): ChallengeInterface[] {

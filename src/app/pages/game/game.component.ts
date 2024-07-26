@@ -18,14 +18,8 @@ export class GameComponent {
   constructor(private challengeService: ChallengesService) {}
 
   ngOnInit(): void {
-    this.challengeService
-      .getRandomChallenges()
-      .subscribe(
-        (challenges: ChallengeInterface[]) => (this.challenges = challenges)
-      );
+    this.challenges = this.challengeService.getRandomChallenges()
   }
-
-
   
   showPrevious = () => {
     if (this.iterator > 0) this.iterator--;
