@@ -1,4 +1,4 @@
-export const killers: string[] = [
+export const KILLERS_NAME: string[] = [
   'Michael Myers',
   'Jason Voorhees',
   'Freddy Krueger',

@@ -1,6 +1,6 @@
 import { ChallengeInterface } from "../models/ChallengeInterface";
 
-export const challengesData: ChallengeInterface[] = [
+export const KILLER_CHALLENGES: ChallengeInterface[] = [
     {
         title: "Le sirop empoisonné",
         description: "Vous allez devoir empoisonner votre cible. Pour ce faire, vous devrez lui faire boire un verre d'eau avec 3 sirops différents.",
