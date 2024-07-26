@@ -5,6 +5,16 @@
   {{ challenges[iterator].title }}
 </div>
 <div class="actions">
-  <button class="actions__previous">Précédent</button>
-  <button class="actions__next">Suivant</button>
+  <button
+    [ngClass]="{ disabled: iterator == 0 }"
+    class="actions__previous"
+  >
+    Précédent
+  </button>
+  <button
+    [ngClass]="{ disabled: iterator == challenges.length - 1}"
+    class="actions__next"
+  >
+    Suivant
+  </button>
 </div>

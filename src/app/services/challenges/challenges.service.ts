@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { KILLER_CHALLENGES } from '../data/killerChallenges';
-import { ChallengeInterface } from '../models/ChallengeInterface';
+import { KILLER_CHALLENGES } from '../../data/killerChallenges';
+import { ChallengeInterface } from '../../models/ChallengeInterface';
 import { type Observable, of } from 'rxjs';
 
 @Injectable({
