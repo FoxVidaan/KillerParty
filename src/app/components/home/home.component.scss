@@ -1,0 +1,16 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+}
+
+.home__description {
+    padding: 1.2em;
+    
+    p {
+        margin-block: 1.2em;
+    }
+}
